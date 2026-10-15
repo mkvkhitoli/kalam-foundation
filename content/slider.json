@@ -1,0 +1,29 @@
+{
+  "slides": [
+    {
+      "image": "/images/cultural-program.jpg",
+      "caption": "Foundation Day cultural program",
+      "alt": "Children in traditional dress from different states on stage"
+    },
+    {
+      "image": "/images/sapling-felicitation.jpg",
+      "caption": "Welcoming guests with saplings",
+      "alt": "Guest welcomed with a sapling"
+    },
+    {
+      "image": "/images/young-artist.jpg",
+      "caption": "Encouraging young talent",
+      "alt": "Young artist presenting a portrait"
+    },
+    {
+      "image": "/images/youth-group.jpg",
+      "caption": "Together with the youth of Khitoli",
+      "alt": "Youth group gathered outdoors"
+    },
+    {
+      "image": "/images/community-gathering.jpg",
+      "caption": "Our village, our strength",
+      "alt": "Villagers at a Kalam Foundation event"
+    }
+  ]
+}

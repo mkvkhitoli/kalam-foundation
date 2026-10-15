@@ -1,0 +1,29 @@
+{
+  "photos": [
+    {
+      "image": "/images/cultural-program.jpg",
+      "alt": "Foundation Day cultural program",
+      "focus": "center"
+    },
+    {
+      "image": "/images/sapling-felicitation.jpg",
+      "alt": "Guest welcomed with a sapling",
+      "focus": "center"
+    },
+    {
+      "image": "/images/child-performer.jpg",
+      "alt": "Young performer on stage",
+      "focus": "top"
+    },
+    {
+      "image": "/images/young-artist.jpg",
+      "alt": "Young artist with her portrait",
+      "focus": "center"
+    },
+    {
+      "image": "/images/community-gathering.jpg",
+      "alt": "Villagers at the event",
+      "focus": "center"
+    }
+  ]
+}

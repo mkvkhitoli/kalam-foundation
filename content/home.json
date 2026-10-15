@@ -1,0 +1,37 @@
+{
+  "stats": [
+    {
+      "number": "20+",
+      "label": "Events & programs"
+    },
+    {
+      "number": "1,000+",
+      "label": "Lives touched"
+    },
+    {
+      "number": "100+",
+      "label": "Volunteers"
+    },
+    {
+      "number": "5+",
+      "label": "Villages reached"
+    }
+  ],
+  "highlights": [
+    {
+      "when": "DECEMBER 2021",
+      "title": "Fit Khitouli Marathon",
+      "text": "A national-level run with around **3,500 participants** from across India and prizes worth **lakhs of rupees**."
+    },
+    {
+      "when": "2024",
+      "title": "Women’s Cricket Tournament",
+      "text": "A rare first for our region — girls and women took the field. **Team Sunita Williams** lifted the title."
+    },
+    {
+      "when": "2021",
+      "title": "Bandhavgarh Clean-up",
+      "text": "Volunteers cleaned the **Khitoli and Tala zones** of Bandhavgarh Tiger Reserve and helped make them plastic-free."
+    }
+  ]
+}

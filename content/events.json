@@ -1,0 +1,63 @@
+{
+  "upcoming": [
+    {
+      "big": "15–20",
+      "small": "Oct 2026",
+      "title": "Khitoli Water Dam Cleanliness Drive",
+      "text": "Six days of cleaning the dam and its surroundings. Volunteers welcome — just turn up or message us.",
+      "badge": "Ongoing"
+    },
+    {
+      "big": "Dec",
+      "small": "2026",
+      "title": "Cricket Tournament",
+      "text": "Our annual cricket tournament. Dates and registration details coming soon.",
+      "badge": ""
+    },
+    {
+      "big": "15",
+      "small": "Oct",
+      "title": "Foundation Day — every year",
+      "text": "Dr. APJ Abdul Kalam’s birth anniversary: cultural program, prizes and motivational talks.",
+      "badge": ""
+    }
+  ],
+  "past": [
+    {
+      "big": "Dec",
+      "small": "2021",
+      "title": "Fit Khitouli Marathon",
+      "text": "National-level marathon with around 3,500 participants from across India and prizes worth lakhs of rupees."
+    },
+    {
+      "big": "2021",
+      "small": "",
+      "title": "Bandhavgarh Tiger Reserve clean-up",
+      "text": "Cleaned the Khitoli and Tala zones and helped make the area plastic-free."
+    },
+    {
+      "big": "2024",
+      "small": "",
+      "title": "Women’s Cricket Tournament",
+      "text": "A first for our region. Team Sunita Williams won the title."
+    },
+    {
+      "big": "15",
+      "small": "Oct",
+      "title": "Foundation Day programs",
+      "text": "Cultural performances, prizes and motivational talks for students every year."
+    },
+    {
+      "big": "All",
+      "small": "year",
+      "title": "Blood test & donation camps",
+      "text": "Health camps organised with local volunteers."
+    },
+    {
+      "big": "All",
+      "small": "year",
+      "title": "Cyber & hygiene awareness",
+      "text": "Digital safety sessions, and hygiene awareness for teenage girls by women volunteers."
+    }
+  ]
+}
