@@ -210,3 +210,14 @@ footer a:hover{color:#fff}
   .ks-slide figcaption{padding:40px 16px 36px}
   .quote{padding:28px}
 }
+.hero {
+  min-height: auto;          /* was likely 100vh */
+  align-items: flex-start;   /* was likely center */
+  padding-top: 40px;         /* reduce from a large value */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 28px;
+  }
+}
