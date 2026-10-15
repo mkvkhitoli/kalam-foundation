@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate — Kalam Foundation</title>
+<meta name="description" content="Support Kalam Foundation by UPI or bank transfer.">
+<meta property="og:title" content="Kalam Foundation">
+<meta property="og:description" content="Community welfare through health camps, relief drives and awareness programs.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23165a4a'/><path d='M32 14c-6 9-12 14-12 22a12 12 0 0 0 24 0c0-8-6-13-12-22z' fill='%23f2a93b'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HOW TO EDIT: yellow-highlighted text (class="ph") is placeholder. Replace it, then delete class="ph". Styles are in style.css, scripts in main.js. -->
+<header>
+  <nav class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#165a4a"/><path d="M32 14c-6 9-12 14-12 22a12 12 0 0 0 24 0c0-8-6-13-12-22z" fill="#f2a93b"/></svg>
+      Kalam Foundation
+    </a>
+    <button class="burger" aria-label="Open menu" onclick="document.querySelector('.menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <ul class="menu">
+      <li><a href="index.html" data-page="index">Home</a></li>
+      <li><a href="about.html" data-page="about">About</a></li>
+      <li><a href="programs.html" data-page="programs">Programs</a></li>
+      <li><a href="events.html" data-page="events">Events</a></li>
+      <li><a href="contact.html" data-page="contact">Volunteer &amp; Contact</a></li>
+      <li><a href="donate.html" class="btn btn-primary">Donate</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Donate</p>
+    <h1>Support our work</h1>
+    <p>Every contribution goes directly into medicines, ration kits and community programs.</p>
+  </div>
+</section>
+
+
+<!-- DONATE -->
+<section id="donate" class="donate">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--saffron)">Support our work</span>
+    <h2>Make a donation</h2>
+    <p class="lead">Your contribution goes directly into medicines, ration kits and community programs. Even a small amount makes a real difference.</p>
+    <div class="donate-grid">
+      <div class="panel">
+        <h3>Pay by UPI</h3>
+        <p style="color:#c4dad2">Scan with Google Pay, PhonePe, Paytm or any UPI app.</p>
+        <div class="qr">Replace with your UPI QR code image<br>(images/upi-qr.png)</div>
+        <div class="upi"><code id="upi" class="ph">kalamfoundation@upi</code><button class="copy" onclick="copyUPI(this)">Copy UPI ID</button></div>
+      </div>
+      <div class="panel">
+        <h3>Bank transfer</h3>
+        <table class="bank">
+          <tr><td>Account name</td><td>Kalam Foundation</td></tr>
+          <tr><td>Account number</td><td class="ph">XXXXXXXXXXXX</td></tr>
+          <tr><td>IFSC</td><td class="ph">XXXX0000000</td></tr>
+          <tr><td>Bank &amp; branch</td><td class="ph">Bank name, Branch</td></tr>
+        </table>
+        <p class="note"><span class="ph">Donations are eligible for tax exemption under Section 80G (Reg. No. XXXX).</span> After donating, send your name, PAN and transaction ID on WhatsApp to receive your receipt.<br>
+        <em>Remove the 80G line if your foundation doesn't have 80G registration.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div style="max-width:340px">
+        <a href="index.html" class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#f2a93b"/><path d="M32 14c-6 9-12 14-12 22a12 12 0 0 0 24 0c0-8-6-13-12-22z" fill="#0a2e26"/></svg>Kalam Foundation</a>
+        <p style="margin-top:12px">Community welfare through care, relief and awareness.</p>
+        <p style="margin-top:8px;font-size:.85rem"><span class="ph">Registered under the Societies Registration Act / Indian Trusts Act · Reg. No. XXXX</span></p>
+      </div>
+      <div>
+        <strong style="color:#fff">Quick links</strong>
+        <p style="margin-top:10px;line-height:2"><a href="about.html">About</a><br><a href="programs.html">Programs</a><br><a href="events.html">Events</a><br><a href="donate.html">Donate</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <strong style="color:#fff">Follow us</strong>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.5-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM16 2H8a6 6 0 0 0-6 6v8a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6zm4 14a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15V9l5.2 3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span class="yr"></span> Kalam Foundation. All rights reserved.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

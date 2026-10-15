@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volunteer & Contact — Kalam Foundation</title>
+<meta name="description" content="Volunteer with Kalam Foundation or get in touch with us.">
+<meta property="og:title" content="Kalam Foundation">
+<meta property="og:description" content="Community welfare through health camps, relief drives and awareness programs.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23165a4a'/><path d='M32 14c-6 9-12 14-12 22a12 12 0 0 0 24 0c0-8-6-13-12-22z' fill='%23f2a93b'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HOW TO EDIT: yellow-highlighted text (class="ph") is placeholder. Replace it, then delete class="ph". Styles are in style.css, scripts in main.js. -->
+<header>
+  <nav class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#165a4a"/><path d="M32 14c-6 9-12 14-12 22a12 12 0 0 0 24 0c0-8-6-13-12-22z" fill="#f2a93b"/></svg>
+      Kalam Foundation
+    </a>
+    <button class="burger" aria-label="Open menu" onclick="document.querySelector('.menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <ul class="menu">
+      <li><a href="index.html" data-page="index">Home</a></li>
+      <li><a href="about.html" data-page="about">About</a></li>
+      <li><a href="programs.html" data-page="programs">Programs</a></li>
+      <li><a href="events.html" data-page="events">Events</a></li>
+      <li><a href="contact.html" data-page="contact">Volunteer &amp; Contact</a></li>
+      <li><a href="donate.html" class="btn btn-primary">Donate</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Volunteer &amp; Contact</p>
+    <h1>Volunteer &amp; contact</h1>
+    <p>Join us as a volunteer, or reach out with any question.</p>
+  </div>
+</section>
+
+
+<!-- VOLUNTEER & CONTACT -->
+<section id="volunteer">
+  <div class="wrap">
+    <span class="eyebrow">Join us</span>
+    <h2>Volunteer with us</h2>
+    <p class="lead">Give a few hours a month. Fill in the form and our coordinator will call you.</p>
+    <div class="vc-grid">
+      <!-- Free form handling: create a form at https://formspree.io and paste your form ID below -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div><label for="name">Full name</label><input id="name" name="name" required></div>
+        <div><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" required></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email"></div>
+        <div><label for="area">I'd like to help with</label>
+          <select id="area" name="interest">
+            <option>Health camps</option><option>Relief drives</option><option>Awareness programs</option>
+            <option>Women &amp; child welfare</option><option>Fundraising</option><option>Social media / design</option><option>Anything needed</option>
+          </select></div>
+        <div class="full"><label for="msg">Message (optional)</label><textarea id="msg" name="message" rows="4"></textarea></div>
+        <div class="full"><button class="btn btn-green" type="submit">Send my details</button></div>
+      </form>
+
+      <div id="contact">
+        <h3 style="font-size:1.5rem;margin-bottom:20px">Contact us</h3>
+        <ul class="contact-list">
+          <li><div class="icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><small>Address</small><span class="ph">Office address, City, State – PIN</span></div></li>
+          <li><div class="icon"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div><div><small>Phone</small><a class="ph" href="tel:+910000000000">+91 00000 00000</a></div></li>
+          <li><div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div><div><small>Email</small><a class="ph" href="mailto:info@yourdomain.org">info@yourdomain.org</a></div></li>
+        </ul>
+        <a class="btn wa" href="https://wa.me/910000000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <!-- Map: Google Maps → search your office → Share → Embed a map → copy the src URL here -->
+        <div class="map photo">🗺️ Paste your Google Maps embed here</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div style="max-width:340px">
+        <a href="index.html" class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#f2a93b"/><path d="M32 14c-6 9-12 14-12 22a12 12 0 0 0 24 0c0-8-6-13-12-22z" fill="#0a2e26"/></svg>Kalam Foundation</a>
+        <p style="margin-top:12px">Community welfare through care, relief and awareness.</p>
+        <p style="margin-top:8px;font-size:.85rem"><span class="ph">Registered under the Societies Registration Act / Indian Trusts Act · Reg. No. XXXX</span></p>
+      </div>
+      <div>
+        <strong style="color:#fff">Quick links</strong>
+        <p style="margin-top:10px;line-height:2"><a href="about.html">About</a><br><a href="programs.html">Programs</a><br><a href="events.html">Events</a><br><a href="donate.html">Donate</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <strong style="color:#fff">Follow us</strong>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.5-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM16 2H8a6 6 0 0 0-6 6v8a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6zm4 14a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15V9l5.2 3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span class="yr"></span> Kalam Foundation. All rights reserved.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
