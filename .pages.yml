@@ -1,0 +1,93 @@
+# Admin page settings for Pages CMS (https://app.pagescms.org)
+# Photos uploaded in the admin page are saved in the images/ folder.
+media:
+  input: images
+  output: /images
+
+content:
+  - name: slider
+    label: Home – Photo slider
+    type: file
+    path: content/slider.json
+    format: json
+    fields:
+      - name: slides
+        label: Slides
+        description: Landscape photos work best. Drag to change the order.
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image, required: true }
+          - { name: caption, label: Caption (shown on the photo), type: string }
+          - { name: alt, label: Short photo description (for Google & blind visitors), type: string }
+
+  - name: home
+    label: Home – Numbers & highlights
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: stats
+        label: Numbers (top of home page)
+        description: "Keep it to 4. Example: number 1,000+ / label Lives touched"
+        type: object
+        list: true
+        fields:
+          - { name: number, label: Number, type: string }
+          - { name: label, label: Label, type: string }
+      - name: highlights
+        label: Highlights (proud moments)
+        description: "Best with 3. Put words between **double stars** to make them bold."
+        type: object
+        list: true
+        fields:
+          - { name: when, label: "When (e.g. DECEMBER 2021)", type: string }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+
+  - name: events
+    label: Events
+    type: file
+    path: content/events.json
+    format: json
+    fields:
+      - name: upcoming
+        label: Upcoming events
+        description: The first 3 also appear on the home page. Drag to reorder.
+        type: object
+        list: true
+        fields:
+          - { name: big, label: "Date – big text (e.g. 15 or 15–20 or Dec)", type: string }
+          - { name: small, label: "Date – small text (e.g. Oct 2026)", type: string }
+          - { name: title, label: Event name, type: string }
+          - { name: text, label: Description, type: text }
+          - { name: badge, label: "Badge (optional, e.g. Ongoing / New)", type: string }
+      - name: past
+        label: Past events
+        type: object
+        list: true
+        fields:
+          - { name: big, label: "Date – big text (e.g. Dec or 2024)", type: string }
+          - { name: small, label: "Date – small text (e.g. 2021)", type: string }
+          - { name: title, label: Event name, type: string }
+          - { name: text, label: Description, type: text }
+
+  - name: gallery
+    label: Events – Photo gallery
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - name: photos
+        label: Photos
+        description: The first photo is shown big.
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image, required: true }
+          - { name: alt, label: Short photo description, type: string }
+          - name: focus
+            label: Keep in view when cropped
+            type: select
+            options:
+              values: [center, top]
