@@ -9,15 +9,6 @@ document.querySelectorAll('.yr').forEach(e => e.textContent = new Date().getFull
   });
 })();
 
-// Copy UPI ID (donate page)
-function copyUPI(btn){
-  const id = document.getElementById('upi').textContent.trim();
-  navigator.clipboard.writeText(id).then(() => {
-    btn.textContent = 'Copied ✓';
-    setTimeout(() => btn.textContent = 'Copy UPI ID', 1800);
-  });
-}
-
 // Photo slider (home page)
 (function(){
   const box=document.getElementById('ks'); if(!box) return; const track=box.querySelector('.ks-track'),
