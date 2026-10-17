@@ -91,3 +91,22 @@ content:
             type: select
             options:
               values: [center, top]
+
+  - name: news
+    label: News & updates
+    type: file
+    path: content/news.json
+    format: json
+    fields:
+      - name: posts
+        label: Posts
+        description: Newest posts (by date) appear first. The latest 3 also show on the home page.
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: date, label: Date, type: date, required: true }
+          - { name: image, label: Cover photo, type: image }
+          - { name: summary, label: Short summary (1–2 lines for the news list), type: text }
+          - { name: body, label: Full story, type: rich-text }
+          - { name: slug, label: "Web address (optional, e.g. cricket-2026 — no spaces)", type: string }
