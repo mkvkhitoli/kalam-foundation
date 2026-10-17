@@ -17,6 +17,11 @@ const esc = t => String(t ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const md = t => esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
 const src = p => esc(String(p ?? '').replace(/^\/+/, ''));
 
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const fdate = d => { const m = String(d ?? '').match(/^(\d{4})-(\d{2})-(\d{2})/); return m ? `${+m[3]} ${MONTHS[+m[2] - 1]} ${m[1]}` : esc(d); };
+const slugify = t => String(t ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const byDate = list => [...list].sort((a, b) => String(b.date ?? '').localeCompare(String(a.date ?? '')));
+
 const R = {
   stat: s => {
     const n = String(s.number ?? '');
@@ -25,6 +30,11 @@ const R = {
   slide: (s, i) => `<figure class="ks-slide"><img src="${src(s.image)}" alt="${esc(s.alt)}" loading="${i === 0 ? 'eager' : 'lazy'}"><figcaption>${esc(s.caption)}</figcaption></figure>`,
   hl: h => `<div class="hl"><span class="when">${esc(h.when)}</span><h3>${esc(h.title)}</h3><p>${md(h.text)}</p></div>`,
   event: e => `<div class="event"><div class="date"><b>${esc(e.big)}</b><small>${esc(e.small)}</small></div><div>${e.badge ? `<span class="badge">${esc(e.badge)}</span><br>` : ''}<h3>${esc(e.title)}</h3><p>${esc(e.text)}</p></div></div>`,
+  news: p => {
+    const slug = esc(p.slug || slugify(p.title));
+    const pic = p.image ? `<img src="${src(p.image)}" alt="" loading="lazy">` : '<span class="news-noimg"></span>';
+    return `<a class="news-card" href="post.html?p=${slug}">${pic}<div class="news-body"><time>${fdate(p.date)}</time><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><span class="more">Read more →</span></div></a>`;
+  },
   photo: p => `<img class="photo" src="${src(p.image)}" alt="${esc(p.alt)}" loading="lazy"${p.focus === 'top' ? ' style="object-position:center 25%"' : ''}>`,
 };
 
@@ -35,6 +45,7 @@ const SOURCES = {
   upcoming:   ['events',  d => d.upcoming,   R.event],
   past:       ['events',  d => d.past,       R.event],
   gallery:    ['gallery', d => d.photos,     R.photo],
+  news:       ['news',    d => byDate(d.posts), R.news],
 };
 
 async function loadContent() {
@@ -74,4 +85,19 @@ function initSlider() {
   go(0); restart();
 }
 
+// Single news post page (post.html?p=slug)
+async function loadPost() {
+  const box = document.getElementById('post'); if (!box) return;
+  const slug = new URLSearchParams(location.search).get('p');
+  const data = await fetch('content/news.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+  const p = data && (data.posts || []).find(x => (x.slug || slugify(x.title)) === slug);
+  if (!p) { box.innerHTML = '<p class="muted">Sorry, this post was not found. See <a href="news.html">all news</a>.</p>'; return; }
+  document.title = `${p.title} — Kalam Foundation, Khitoli`;
+  document.getElementById('post-title').textContent = p.title;
+  document.getElementById('post-date').innerHTML = fdate(p.date);
+  const body = String(p.body ?? '').replace(/<script[\s\S]*?<\/script>/gi, '').replace(/\son\w+="[^"]*"/gi, '');
+  box.innerHTML = (p.image ? `<img class="post-img" src="${src(p.image)}" alt="${esc(p.title)}">` : '') + `<div class="post-body">${body}</div>`;
+}
+
 loadContent().finally(initSlider);
+loadPost();

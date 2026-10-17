@@ -11,14 +11,15 @@
       "big": "Dec",
       "small": "2026",
       "title": "Cricket Tournament",
-      "text": "Our annual cricket tournament. Dates and registration details coming soon."
+      "text": "Our annual cricket tournament. Dates and registration details coming soon.",
+      "badge": ""
     },
     {
       "big": "15",
       "small": "Oct",
-      "title": "Foundation Day — every year- This year on 25 Oct",
+      "title": "Foundation Day — every year",
       "text": "Dr. APJ Abdul Kalam’s birth anniversary: cultural program, prizes and motivational talks.",
-      "badge": "Upcoming"
+      "badge": ""
     }
   ],
   "past": [
@@ -30,11 +31,13 @@
     },
     {
       "big": "2021",
+      "small": "",
       "title": "Bandhavgarh Tiger Reserve clean-up",
       "text": "Cleaned the Khitoli and Tala zones and helped make the area plastic-free."
     },
     {
       "big": "2024",
+      "small": "",
       "title": "Women’s Cricket Tournament",
       "text": "A first for our region. Team Sunita Williams won the title."
     },
