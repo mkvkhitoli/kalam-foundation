@@ -1,19 +1,44 @@
 {
   "slides": [
     {
-      "image": "/images/cultural-program.jpg",
-      "caption": "Foundation Day cultural program",
-      "alt": "Children in traditional dress from different states on stage"
+      "image": "/images/DSC04346.jpg",
+      "caption": "Not Just Cleaning a Reservoir, but Protecting a Lifeline.",
+      "alt": "Dam Cleaning Day 2 Photos"
     },
     {
-      "image": "/images/sapling-felicitation.jpg",
-      "caption": "Honoring young achievers",
-      "alt": "Guest welcomed with a sapling"
+      "image": "/images/DSC04347.jpg",
+      "caption": "Not Just Cleaning a Reservoir, but Protecting a Lifeline.",
+      "alt": "Dam Cleaning Day 2 Photos"
     },
     {
-      "image": "/images/young-artist.jpg",
-      "caption": "Encouraging young talent",
-      "alt": "Young artist presenting a portrait"
+      "image": "/images/DSC04348.jpg",
+      "caption": "Not Just Cleaning a Reservoir, but Protecting a Lifeline.",
+      "alt": "Dam Cleaning Day 2 Photos"
+    },
+    {
+      "image": "/images/DSC04356.jpg",
+      "caption": "Not Just Cleaning a Reservoir, but Protecting a Lifeline.",
+      "alt": "Dam Cleaning Day 2 Photos"
+    },
+    {
+      "image": "/images/DSC04360.jpg",
+      "caption": "Not Just Cleaning a Reservoir, but Protecting a Lifeline.",
+      "alt": "Dam Cleaning Day 2 Photos"
+    },
+    {
+      "image": "/images/DSC04367.jpg",
+      "caption": "Not Just Cleaning a Reservoir, but Protecting a Lifeline.",
+      "alt": "Dam Cleaning Day 2 Photos"
+    },
+    {
+      "image": "/images/DSC04365.jpg",
+      "caption": "Not Just Cleaning a Reservoir, but Protecting a Lifeline.",
+      "alt": "Dam Cleaning Day 2 Photos"
+    },
+    {
+      "image": "/images/community-gathering.jpg",
+      "caption": "Our village, our strength",
+      "alt": "Villagers at a Kalam Foundation event"
     },
     {
       "image": "/images/youth-group.jpg",
@@ -21,9 +46,19 @@
       "alt": "Youth group gathered outdoors"
     },
     {
-      "image": "/images/community-gathering.jpg",
-      "caption": "Our village, our strength",
-      "alt": "Villagers at a Kalam Foundation event"
+      "image": "/images/young-artist.jpg",
+      "caption": "Encouraging young talent",
+      "alt": "Young artist presenting a portrait"
+    },
+    {
+      "image": "/images/sapling-felicitation.jpg",
+      "caption": "Honoring young achievers",
+      "alt": "Guest welcomed with a sapling"
+    },
+    {
+      "image": "/images/cultural-program.jpg",
+      "caption": "Foundation Day cultural program",
+      "alt": "Children in traditional dress from different states on stage"
     }
   ]
 }
