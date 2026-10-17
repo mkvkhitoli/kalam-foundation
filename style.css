@@ -238,3 +238,4 @@ footer a:hover{color:#fff}
 @media (max-width:900px){.news-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:760px){.news-grid{grid-template-columns:1fr}}
 @media (min-width:821px) and (max-width:1060px){.menu{gap:14px}.menu a{font-size:.86rem}.menu .btn{padding:8px 14px}}
+.post-body blockquote{border-left:3px solid var(--green);padding:4px 0 4px 16px;color:var(--muted);margin:0 0 1.1em}

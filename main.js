@@ -85,6 +85,26 @@ function initSlider() {
   go(0); restart();
 }
 
+// Pages CMS saves the story as Markdown; turn it into HTML (HTML is also accepted)
+function mdToHtml(t) {
+  t = String(t ?? '').trim();
+  if (/^<[a-z]/i.test(t)) return t;
+  const inline = s => esc(s)
+    .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (m, a, u) => `<img src="${src(u)}" alt="${a}">`)
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, a, u) => `<a href="${/^(https?:|mailto:|tel:|\/|#)/.test(u) ? u : '#'}" target="_blank" rel="noopener">${a}</a>`)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  return t.split(/\n{2,}/).map(block => {
+    const lines = block.split('\n');
+    const h = block.match(/^(#{1,4})\s+(.*)$/);
+    if (h && lines.length === 1) { const lv = Math.min(h[1].length + 1, 4); return `<h${lv}>${inline(h[2])}</h${lv}>`; }
+    if (lines.every(l => /^\s*[-*]\s+/.test(l))) return '<ul>' + lines.map(l => `<li>${inline(l.replace(/^\s*[-*]\s+/, ''))}</li>`).join('') + '</ul>';
+    if (lines.every(l => /^\s*\d+[.)]\s+/.test(l))) return '<ol>' + lines.map(l => `<li>${inline(l.replace(/^\s*\d+[.)]\s+/, ''))}</li>`).join('') + '</ol>';
+    if (lines.every(l => /^>\s?/.test(l))) return `<blockquote>${inline(lines.map(l => l.replace(/^>\s?/, '')).join(' '))}</blockquote>`;
+    return `<p>${lines.map(inline).join('<br>')}</p>`;
+  }).join('');
+}
+
 // Single news post page (post.html?p=slug)
 async function loadPost() {
   const box = document.getElementById('post'); if (!box) return;
@@ -95,7 +115,7 @@ async function loadPost() {
   document.title = `${p.title} — Kalam Foundation, Khitoli`;
   document.getElementById('post-title').textContent = p.title;
   document.getElementById('post-date').innerHTML = fdate(p.date);
-  const body = String(p.body ?? '').replace(/<script[\s\S]*?<\/script>/gi, '').replace(/\son\w+="[^"]*"/gi, '');
+  const body = mdToHtml(p.body).replace(/<script[\s\S]*?<\/script>/gi, '').replace(/\son\w+="[^"]*"/gi, '');
   box.innerHTML = (p.image ? `<img class="post-img" src="${src(p.image)}" alt="${esc(p.title)}">` : '') + `<div class="post-body">${body}</div>`;
 }
 
