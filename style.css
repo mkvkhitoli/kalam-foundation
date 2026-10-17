@@ -51,7 +51,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 .burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0}
 
 /* Home hero */
-.hero{background:var(--grad-navy);color:#fff;padding:92px 0 0;position:relative;overflow:hidden}
+.hero{background:var(--grad-navy);color:#fff;padding:72px 0 0;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;right:-140px;top:-140px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(46,165,111,.45),transparent 70%)}
 .hero::after{content:"";position:absolute;left:-120px;bottom:-160px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(242,182,50,.18),transparent 70%)}
 .hero .wrap{position:relative;z-index:1}
@@ -171,7 +171,7 @@ footer a:hover{color:#fff}
 .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:20px;text-align:center}
 
 /* Slider */
-.ks-section{padding:48px 20px 0}
+.ks-section{padding:24px 20px}
 .ks{position:relative;max-width:1120px;margin:0 auto;border-radius:16px;overflow:hidden;aspect-ratio:16/7;background:#dfe6f3;touch-action:pan-y}
 .ks-track{display:flex;height:100%;transition:transform .6s ease}
 .ks-slide{flex:0 0 100%;height:100%;position:relative;margin:0}
@@ -204,20 +204,14 @@ footer a:hover{color:#fff}
   .cards,.events,.highlights,.ways,.past,form{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr 1fr}
   .pillars{grid-template-columns:1fr}
-  .ks-section{padding:32px 16px 0}
+  .ks-section{padding:16px 16px}
   .ks{aspect-ratio:4/3;border-radius:12px}
   .ks-btn{width:36px;height:36px;font-size:15px}
   .ks-slide figcaption{padding:40px 16px 36px}
   .quote{padding:28px}
 }
-.hero {
-  min-height: auto;          /* was likely 100vh */
-  align-items: flex-start;   /* was likely center */
-  padding-top: 40px;         /* reduce from a large value */
-}
 
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 28px;
-  }
-}
+/* Slider inside the home banner */
+.hero p{margin-bottom:26px}
+.hero .hero-ks{margin:0 0 30px;box-shadow:0 18px 40px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.15)}
+@media (max-width:760px){.hero .hero-ks{aspect-ratio:4/3;border-radius:12px}}
