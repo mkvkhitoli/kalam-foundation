@@ -1,20 +1,20 @@
 {
   "posts": [
     {
-      "title": "Khitoli Water Dam Cleanliness Drive: 15–20 October 2026",
-      "slug": "water-dam-cleanliness-drive-2026",
+      "title": "Khitoli Water Dam Cleanliness Drive: 15–25 October 2026",
       "date": "2026-10-15",
-      "image": "/images/community-gathering.jpg",
+      "image": "/images/DSC04367-1.jpg",
       "summary": "Six days of cleaning the Khitoli Water Dam and its surroundings. Everyone is welcome to join.",
-      "body": "<p>From <strong>15 to 20 October 2026</strong>, Kalam Foundation volunteers are cleaning the Khitoli Water Dam and the area around it.</p><p>Clean water sources matter for everyone in the village — for drinking, farming and animals. Plastic and waste near the dam harm all of these.</p><p><strong>How to join:</strong> just turn up with gloves and a bag, or message us on WhatsApp at +91 95221 51016. Anyone aged 14 or above can volunteer.</p>"
+      "body": "From **15 to 20 October 2026**, Kalam Foundation volunteers are cleaning the Khitoli Water Dam and the area around it.\n\nClean water sources matter for everyone in the village — for drinking, farming and animals. Plastic and waste near the dam harm all of these.\n\n**How to join:** just turn up with gloves and a bag, or message us on WhatsApp at +91 95221 51016. Anyone aged 14 or above can volunteer.",
+      "slug": "water-dam-cleanliness-drive-2026"
     },
     {
       "title": "Our new website is live",
-      "slug": "new-website-live",
       "date": "2026-10-11",
       "image": "/images/cultural-program.jpg",
       "summary": "Kalam Foundation now has its own website — with our story, programs, events, photos and a simple way to volunteer.",
-      "body": "<p>Kalam Foundation now has a home on the internet: <strong>kalamfoundationkhitoli.in</strong>.</p><p>Here you can read how Kalam Classes started in 2016, see our programs and events, look through photos, and sign up as a volunteer in under a minute.</p><p>Follow this News section for updates on our drives, tournaments and Foundation Day programs.</p>"
+      "body": "Kalam Foundation now has a home on the internet: **kalamfoundationkhitoli.in**.\n\nHere you can read how Kalam Classes started in 2016, see our programs and events, look through photos, and sign up as a volunteer in under a minute.\n\nFollow this News section for updates on our drives, tournaments and Foundation Day programs.",
+      "slug": "new-website-live"
     }
   ]
 }
